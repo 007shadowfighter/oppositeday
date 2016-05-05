@@ -9,15 +9,40 @@
     <sprite>sprites\s_wall</sprite>
     <sprite>sprites\s_player</sprite>
     <sprite>sprites\s_bullet</sprite>
+    <sprites name="main menu">
+      <sprite>sprites\s_sprite_exit</sprite>
+      <sprite>sprites\s_sprite_play</sprite>
+      <sprite>sprites\s_start2</sprite>
+      <sprite>sprites\s_exit2</sprite>
+      <sprite>sprites\s_cursor</sprite>
+      <sprite>sprites\sprite10</sprite>
+      <sprite>sprites\s_back</sprite>
+      <sprite>sprites\s_back2</sprite>
+    </sprites>
+    <sprites name="headings">
+      <sprite>sprites\s_main_title</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_mouse_hover.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\o_player</object>
     <object>objects\o_wall</object>
+    <object>objects\o_cursor</object>
+    <objects name="menu">
+      <object>objects\o_play</object>
+      <object>objects\o_exit</object>
+      <object>objects\o_back</object>
+      <object>objects\o_main_title</object>
+      <object>objects\o_exit2</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\rm_menu</room>
+    <room>rooms\rm_gameworld</room>
     <room>rooms\room1</room>
   </rooms>
   <help>
