@@ -22,6 +22,8 @@
     <sprites name="headings">
       <sprite>sprites\s_main_title</sprite>
     </sprites>
+    <sprite>sprites\s_vine</sprite>
+    <sprite>sprites\s_warp</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -39,6 +41,10 @@
       <object>objects\o_main_title</object>
       <object>objects\o_exit2</object>
     </objects>
+    <object>objects\o_vine</object>
+    <object>objects\o_warp</object>
+    <object>objects\o_up_wall</object>
+    <object>objects\down_plat</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
