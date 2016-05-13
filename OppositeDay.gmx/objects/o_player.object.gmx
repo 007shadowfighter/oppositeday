@@ -26,11 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>///Initialize variables
-grav = 0.2;
+grav = 0.5;
 hsp = 0;
 vsp = 0;
 jumpspeed = 7;
-movespeed = 4;
+movespeed = 6;
 </string>
           </argument>
         </arguments>
@@ -53,7 +53,9 @@ movespeed = 4;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//get the player's input
+            <string>
+
+// player's input
 key_right = keyboard_check(vk_right);
 key_left = -keyboard_check(vk_left);
 key_jump = keyboard_check_pressed(vk_space);
@@ -75,7 +77,7 @@ if (place_meeting(x,y+1,o_wall))
    hsp = 0;
 }        
 x += hsp;
-//vertical collision
+//get th//vertical collision
  if (place_meeting(x,y+vsp,o_wall))
 {
     while(!place_meeting(x,y+sign(vsp),o_wall)) 
@@ -86,7 +88,6 @@ x += hsp;
 }   
 
 y += vsp;
-
 
 
 
