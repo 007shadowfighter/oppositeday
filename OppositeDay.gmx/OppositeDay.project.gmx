@@ -27,7 +27,9 @@
     <sprite>sprites\s_door</sprite>
     <sprite>sprites\s_burnt</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\forrest</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_mouse_hover.gml</script>
