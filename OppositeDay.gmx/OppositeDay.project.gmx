@@ -24,6 +24,8 @@
     </sprites>
     <sprite>sprites\s_vine</sprite>
     <sprite>sprites\s_warp</sprite>
+    <sprite>sprites\s_door</sprite>
+    <sprite>sprites\s_burnt</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -45,6 +47,8 @@
     <object>objects\o_warp</object>
     <object>objects\o_up_wall</object>
     <object>objects\down_plat</object>
+    <object>objects\o_door</object>
+    <object>objects\o_burnt_wood</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
