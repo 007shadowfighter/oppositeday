@@ -11,41 +11,41 @@
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
-        <id>532</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_effect</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>4</kind>
-            <string>5</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>1</string>
-          </argument>
-          <argument>
-            <kind>13</kind>
-            <string>16777215</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
+            <kind>1</kind>
+            <string>//particle system
+partSmoke_sys = part_system_create();
+part_system_depth(partSmoke_sys,0);
+
+//particle
+partSmoke = part_type_create();
+part_type_shape(partSmoke, pt_shape_smoke);
+part_type_scale(partSmoke,1,1);
+part_type_size(partSmoke,0.3,0.5,-0.005,0);
+part_type_colour2(partSmoke,c_ltgray,c_white);
+part_type_alpha2(partSmoke,1,0.75);
+part_type_speed(partSmoke,0.08,0.1,0,0);
+part_type_direction(partSmoke,0,359,0,0);
+part_type_gravity(partSmoke,0.02,90);
+part_type_life(partSmoke,room_speed*4,room_speed*28);
+
+//particle emitter
+partSmoke_emit = part_emitter_create(partSmoke_sys);
+part_emitter_region(partSmoke_sys,partSmoke_emit,x-2,x+2,y-2,y+2,ps_shape_ellipse,ps_distr_gaussian);
+part_emitter_stream(partSmoke_sys,partSmoke_emit,partSmoke,1);
+</string>
           </argument>
         </arguments>
       </action>
