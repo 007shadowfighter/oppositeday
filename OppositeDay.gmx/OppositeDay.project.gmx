@@ -18,6 +18,8 @@
       <sprite>sprites\sprite10</sprite>
       <sprite>sprites\s_back</sprite>
       <sprite>sprites\s_back2</sprite>
+      <sprite>sprites\s_gameover</sprite>
+      <sprite>sprites\controls</sprite>
     </sprites>
     <sprites name="headings">
       <sprite>sprites\s_main_title</sprite>
@@ -26,9 +28,15 @@
     <sprite>sprites\s_warp</sprite>
     <sprite>sprites\s_door</sprite>
     <sprite>sprites\s_burnt</sprite>
+    <sprite>sprites\s_part_fire</sprite>
+    <sprite>sprites\s_clear</sprite>
+    <sprite>sprites\s_warning</sprite>
+    <sprite>sprites\s_continue</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\forrest</background>
+    <background>background\forrest_night</background>
+    <background>background\survived</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -44,18 +52,31 @@
       <object>objects\o_back</object>
       <object>objects\o_main_title</object>
       <object>objects\o_exit2</object>
+      <object>objects\o_gameover_text</object>
     </objects>
     <object>objects\o_vine</object>
     <object>objects\o_warp</object>
     <object>objects\o_up_wall</object>
     <object>objects\down_plat</object>
     <object>objects\o_door</object>
+    <object>objects\o_finish_door</object>
+    <object>objects\o_fake_door</object>
     <object>objects\o_burnt_wood</object>
+    <object>objects\o_part_fire</object>
+    <object>objects\o_spawn</object>
+    <objects name="warning">
+      <object>objects\o_warning</object>
+      <object>objects\o_continue</object>
+    </objects>
+    <object>objects\o_controls</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\fires</room>
     <room>rooms\rm_menu</room>
+    <room>rooms\rm_gameover</room>
     <room>rooms\rm_gameworld</room>
     <room>rooms\room1</room>
+    <room>rooms\finish</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
