@@ -28,7 +28,7 @@
             <string>//kill player
 if (place_meeting(x,y,o_player))
 {
-    room_goto(room1);
+    room_goto(finish);
     //part_system_destroy(global.smoke_sys);
 }
 </string>
